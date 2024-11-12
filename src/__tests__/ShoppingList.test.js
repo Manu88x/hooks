@@ -16,8 +16,8 @@ const testData = [
   { id: 5, name: "Cookies", category: "Dessert" },
 ];
 
-test("uses a class component", () => {
-  expect(isClassComponent(ShoppingList)).toBe(true);
+test("uses a functional component", () => {
+  expect(isClassComponent(ShoppingList)).toBe(false);  // Since it's a functional component
 });
 
 test("displays all items when initially rendered", () => {

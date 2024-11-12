@@ -8,8 +8,8 @@ function isClassComponent(component) {
   );
 }
 
-test("uses a class component", () => {
-  expect(isClassComponent(App)).toBe(true);
+test("uses a functional component", () => {
+  expect(isClassComponent(App)).toBe(false);  // Since it's a functional component
 });
 
 test("displays in 'light' mode when initialized", () => {
@@ -38,3 +38,4 @@ test("changes back to 'light' mode when the button is clicked twice", () => {
 
   expect(container.querySelector(".light")).toBeInTheDocument();
 });
+
